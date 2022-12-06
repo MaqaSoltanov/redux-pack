@@ -18,7 +18,7 @@ class CartItem extends PureComponent {
 
 const mapDispatchToProps = (dispatch) => ({
     deleteGoodFromCart: (id) => {
-      console.log("Delete dispatch")      
+      console.log("Dispatched id to delete item")      
       dispatch(deleteGoodFromCart(id));}
 });
 

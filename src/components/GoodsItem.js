@@ -24,7 +24,7 @@ class GoodsItem extends PureComponent {
 }
 const mapDispatchToProps = (dispatch) => ({  
   addGoodToCart: (id) => {
-    console.log("Dispatch");
+    console.log("Dispatched id to add item");
     dispatch(addGoodToCart(id))}
 });
 

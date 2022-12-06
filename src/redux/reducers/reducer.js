@@ -31,7 +31,7 @@ function reducer(state=initialState, action)
 {         
     if(action.type === "ADD_GOOD_TO_CART")
     {        
-        console.log("Reducer return store");        
+        console.log("Reducer was called to add element");        
         const good = structuredClone(state.goods.find(item => 
         item.id === action.payload.id)); 
         good.id = Number(randomizeId().toFixed(5) * 100000);
@@ -45,7 +45,7 @@ function reducer(state=initialState, action)
 
     if(action.type === "DELETE_GOOD_FROM_CART")
     {       
-        console.log("Delete reducer");                 
+        console.log("Reducer was called to delete element");                 
         const cart = state.cart.filter(
             (item)=> item.id !== action.payload.id
          );

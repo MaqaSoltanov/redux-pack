@@ -22,7 +22,7 @@ class Goods extends PureComponent {
 
 const mapStateToProps = (state) =>
 {  
-  console.log("Map state to props Goods");
+  console.log("mapStateToProps is executed. Goods are updated");
   return{
     goods: state.goods
   }

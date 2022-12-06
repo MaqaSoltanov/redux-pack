@@ -1,6 +1,6 @@
 export default function addGoodToCart(id)
 {    
-    console.log("AddGoodToCart");
+    console.log("addGoodToCart is executed");
     return{
         type: "ADD_GOOD_TO_CART",
         payload:

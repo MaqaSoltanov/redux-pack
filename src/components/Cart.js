@@ -31,8 +31,10 @@ class Cart extends PureComponent {
 }
 const mapStateToProps = (state) =>
 {    
-  console.log("Map State to Props Cart");
-  console.log("-----------");
+  console.log("mapStateToProps Cart is updated");
+  console.log("");
+  console.log("-------Section ended-------");
+  console.log("");
   return{
     cartGoods: state.cart 
   }

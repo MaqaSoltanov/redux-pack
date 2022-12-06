@@ -31,7 +31,7 @@ class Cart extends PureComponent {
 }
 const mapStateToProps = (state) =>
 {    
-  console.log("mapStateToProps Cart is updated");
+  console.log("mapStateToProps is executed. Cart is updated");
   console.log("");
   console.log("-------Section ended-------");
   console.log("");

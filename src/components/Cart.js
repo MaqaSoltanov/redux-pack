@@ -2,6 +2,7 @@ import React, { PureComponent } from "react";
 import "../styles.css";
 
 import CartItem from './CartItem';
+import store from "../redux/reducers/store";
 
 class Cart extends PureComponent {
   state = {
@@ -10,6 +11,15 @@ class Cart extends PureComponent {
   getTotal() {
     const { cartGoods } = this.state;
     return cartGoods.reduce((acc, item) => acc + item.price, 0);
+  }
+
+  componentDidMount()
+  {
+    store.subscribe(() => {
+      const state = store.getState();     
+      this.setState({ 
+        cartGoods: state.cart 
+      })});
   }
   render() {
     return (

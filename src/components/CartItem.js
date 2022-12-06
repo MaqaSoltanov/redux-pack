@@ -1,7 +1,6 @@
 import React, { PureComponent } from "react";
 import "../styles.css";
 
-
 class CartItem extends PureComponent {
   render() {
     const { title, price } = this.props;

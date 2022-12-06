@@ -1,5 +1,6 @@
-export default function addGoodToCard(id)
-{
+export default function addGoodToCart(id)
+{    
+    console.log("AddGoodToCart");
     return{
         type: "ADD_GOOD_TO_CART",
         payload:

@@ -132,8 +132,8 @@ body {
 
 .cart-item {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content: center;
+  align-items: center;
   margin: 0;
 }
 
@@ -146,4 +146,27 @@ body {
 .cart-item__price {
   margin: 0;
   font-size: 14px;
+}
+
+.delete-item-button{
+  
+  font-size: 10px;
+  background-color: #1a73e8;
+  border: 0px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  padding: 2px;
+  vertical-align: middle;
+  text-align: center;    
+  margin-left: 10px;  
+  display: flex;
+  justify-content: center;
+}
+
+.delete-item-button:hover{
+  width: 15.5px;
+  height: 15.5px;
+  cursor: pointer;
 }

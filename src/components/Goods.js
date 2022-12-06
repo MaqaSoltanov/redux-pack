@@ -1,15 +1,7 @@
 import React, { PureComponent } from "react";
 import "../styles.css";
-import store from "../redux/reducers/store";
 import GoodsItem from './GoodsItem';
 import { connect } from "react-redux";
-
-const mapStateToProps = (state) =>
-{  
-  return{
-    goods: state.goods
-  }
-}
 
 class Goods extends PureComponent {
   render() {
@@ -28,4 +20,11 @@ class Goods extends PureComponent {
   }
 }
 
+const mapStateToProps = (state) =>
+{  
+  console.log("Map state to props Goods");
+  return{
+    goods: state.goods
+  }
+}
 export default connect(mapStateToProps)(Goods);
